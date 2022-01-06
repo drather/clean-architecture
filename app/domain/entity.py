@@ -1,6 +1,11 @@
-import dataclasses
+from dataclasses import dataclass
 
 
-@dataclasses.dataclass
-class User:
+@dataclass
+class Domain:
+    ...
+
+
+@dataclass
+class User(Domain):
     name: str

@@ -13,7 +13,6 @@ def init_db():
 
 
 def create_app():
-    init_db()
     app = FastAPI()
     app.add_api_route(
         path="/user",
@@ -23,7 +22,11 @@ def create_app():
     return app
 
 
+app = create_app()
+
+
 if __name__ == '__main__':
-    app = create_app()
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    init_db()
+
+    uvicorn.run("app.infrastructure.fastapi.main:app", host="0.0.0.0", port=8000, reload=True)
 
