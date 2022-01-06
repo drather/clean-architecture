@@ -13,5 +13,11 @@ class UserService:
     def create_user(self, user_name: str):
         # DB 에 저장
         _user = User(name=user_name)
+
+        # DB 에 해당 이름 있는지 확인하고, 있다면 Exception 발생
+        if self.repository.find_one(model=_user):
+            raise ValueError("유저가 이미 존재합니다")
+
         user = self.repository.create(_user)
+
         return user
