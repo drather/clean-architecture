@@ -3,6 +3,9 @@ from app.domain.entity import Domain
 
 
 class FakeUserRepository(AbstractRepository):
+    def find_all(self):
+        pass
+
     def __init__(self):
         self.users = []
 
