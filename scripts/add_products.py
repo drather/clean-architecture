@@ -22,3 +22,4 @@ if __name__ == "__main__":
     ProductModel.save(p3)
 
     print("Product 생성이 완료")
+    db.close()
