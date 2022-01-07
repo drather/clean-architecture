@@ -15,3 +15,6 @@ class UserRepository(AbstractRepository):
             return None
 
         return User(name=user.name)
+
+    def find_all(self):
+        pass

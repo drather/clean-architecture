@@ -32,10 +32,10 @@ def test_create_product(init_database):
     repository = ProductRepository()
     product_id, product_name, product_price = 1, "맥북", 1250000
 
-    _product = Product(id=product_id, name="맥북", price=1250000)
+    _product = Product(id=product_id, name=product_name, price=product_price)
 
     # Product 생성
-    ProductModel.create(name=product_name, price=product_price)
+    ProductModel.create(id=product_id, name=product_name, price=product_price)
 
     # Product 조회
     product = repository.find_one(model=_product)

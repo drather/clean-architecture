@@ -3,6 +3,7 @@ import datetime
 
 # DB 의 경로를 동적ㅈ으로 처리해줄 수 있음.
 db = SqliteDatabase(None, thread_safe=True)
+# db = SqliteDatabase("database.db")
 
 
 class BaseModel(Model):

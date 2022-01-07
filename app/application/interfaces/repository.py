@@ -11,3 +11,7 @@ class AbstractRepository(abc.ABC):
     @abc.abstractmethod
     def find_one(self, model:Domain):
         ...
+
+    @abc.abstractmethod
+    def find_all(self):
+        ...
