@@ -9,6 +9,7 @@ from tests.fakes import FakeUserRepository
 def user_service():
     repository = FakeUserRepository()
     user_service = UserService(user_repository=repository)
+
     return user_service
 
 
