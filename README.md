@@ -12,14 +12,14 @@
 |                +-- product.py
 |                +-- user.py
 |	
-|			+-- /controller
+|           +-- /controller
 |                +-- product.py
 |                +-- user.py
 |			
-|			+-- /domain
+|           +-- /domain
 |                +-- entity.py
 |			
-|			+-- /infrastructure
+|           +-- /infrastructure
 |                +-- /database
 |                    +-- orm.py
 |                    +-- /repository
