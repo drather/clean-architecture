@@ -37,4 +37,4 @@
 ```
 
 ## 의존성 다이어그램
-![image]https://user-images.githubusercontent.com/55076919/149782245-ca930a25-fc71-4d65-b3ae-3b5ee893860b.png
+![image](https://user-images.githubusercontent.com/55076919/149782245-ca930a25-fc71-4d65-b3ae-3b5ee893860b.png)
