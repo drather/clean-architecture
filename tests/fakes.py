@@ -1,7 +1,8 @@
 from app.application.interfaces.repository import AbstractRepository
 from app.domain.entity import Domain
 
-
+"""
+"""
 class FakeUserRepository(AbstractRepository):
     def find_all(self):
         pass
