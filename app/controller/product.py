@@ -5,6 +5,11 @@ from app.infrastructure.database.repository.product import ProductRepository
 
 
 def find_product(product_id: int):
+    """
+    controller
+    :param product_id:
+    :return:
+    """
     repository = ProductRepository()
     product_service = ProductService(repository=repository)
 
