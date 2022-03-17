@@ -8,10 +8,14 @@ from app.domain.entity import User
 
 class UserService:
     def __init__(self, user_repository: AbstractRepository):
+        """
+        repository 를 외부에서 주입받는 생성 메서드
+        :param user_repository:
+        """
         self.repository = user_repository
 
     def create_user(self, user_name: str):
-        # DB 에 저장
+        # user 객체 생성 후 DB 에 저장
         _user = User(name=user_name)
 
         # DB 에 해당 이름 있는지 확인하고, 있다면 Exception 발생
